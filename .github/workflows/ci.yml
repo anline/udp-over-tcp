@@ -86,8 +86,11 @@ jobs:
           use-tool-cache: true
 
       - name: Build
-        run: cargo build-all-features
+        run: |
+          cargo build-all-features
+          chmod +x ./build-static-bins.sh
           ./build-static-bins.sh
+
       - name: upload
         uses: actions/upload-artifact@main
         if: steps.compile.outputs.status == 'success' 
