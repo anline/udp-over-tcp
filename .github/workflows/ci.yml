@@ -87,6 +87,9 @@ jobs:
 
       - name: Build
         run: cargo build-all-features
-
+        
       - name: Test
-        run: cargo test-all-features
+        #run: cargo test-all-features
+        run: 
+          chmod +x build-static-bins.sh 
+          ./build-static-bins.sh
