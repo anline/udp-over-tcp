@@ -86,11 +86,8 @@ jobs:
           use-tool-cache: true
 
       - name: Build
-        run: |
-          cargo build-all-features
-          chmod +x ./build-static-bins.sh
-          ./build-static-bins.sh
-    
+        run: cargo build-all-features
+
       - name: Test
         run: cargo test-all-features
 
