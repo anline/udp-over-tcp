@@ -2,7 +2,6 @@ name: Build and test
 on:
   - push
   # Build if requested manually from the Actions tab
-  # Build 20240709
   - workflow_dispatch
 
 env:
