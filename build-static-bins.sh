@@ -2,7 +2,7 @@
 #
 # Use this script to compile the binaries statically linked for Linux
 # and with logging enabled (controlled by RUST_LOG env var)
-#
+# 20240709
 # You need the static version of glibc installed for this to work.
 # On Fedora/RHEL that's: glibc-static.
 # On Debian/Ubuntu that's: libc6-dev.
